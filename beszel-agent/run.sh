@@ -8,4 +8,7 @@ declare __BASHIO_LOG_TIMESTAMP="%Y-%m-%d %T"
 
 bashio::log.info "Beszel-Agent $DROPBACK_VERSION"
 
+pwd;
+ls -al;
+
 PORT=45876 PUBLIC_KEY="$PUBLIC_KEY" ./beszel-agent
