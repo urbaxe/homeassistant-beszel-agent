@@ -42,4 +42,4 @@ jobs:
           args: |
             --all \
             --target $(find . -type f -name "Dockerfile" -exec dirname {} \; | awk -F'/' '{print $NF}') \
-            --docker-hub matthewhadley
+            --docker-hub ${{ secrets.DOCKERHUB_USERNAME }}
