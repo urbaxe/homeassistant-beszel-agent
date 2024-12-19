@@ -1,0 +1,6 @@
+---
+configuration:
+  public_key:
+    name: Public Key
+    description: >-
+      Agent Public Key
