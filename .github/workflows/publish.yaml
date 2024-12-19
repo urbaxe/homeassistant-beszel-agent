@@ -14,7 +14,7 @@ jobs:
         id: check_version_bumb
         run: |
           c=$(grep version < beszel-agent/config.yaml | grep -o '[0-9\.]*');
-          p=$(git show HEAD~1:beszel-agent/config.yaml | grep version | grep -o '[0-9\.]*');
+          p=$(git show HEAD~1:beszel-agent/config.yaml 2>/dev/null && git show HEAD~1:beszel-agent/config.yaml | grep version | grep -o '[0-9\.]*' || echo 0);
           echo "Current version: $c"
           echo " Commit version: $p"
           if [[ ! -z "$c" && "$c" != "$p" ]]; then
