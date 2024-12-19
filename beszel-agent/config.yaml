@@ -1,13 +1,14 @@
 name: "Beszel-Agent"
 description: "Beszel-Agent for Home Assistant"
 url: "https://github.com/matthewhadley/homeassistant-beszel-agent"
-version: "0.4.0"
+version: "0.5.0"
 slug: "beszel-agent"
 init: false
 stdin: true
 hassio_api: false
 homeassistant_api: false
 docker_api: true
+host_network: true
 options:
   public_key: null
 schema:
