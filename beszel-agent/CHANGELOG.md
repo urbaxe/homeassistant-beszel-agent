@@ -1,3 +1,9 @@
+## [0.7.0] - 2024-12-19
+
+### Changed
+
+- generic publish workflow
+
 ## [0.6.0] - 2024-12-18
 
 ### Changed
