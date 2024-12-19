@@ -1,3 +1,13 @@
+## [0.6.0] - 2024-12-18
+
+### Changed
+
+- logo
+
+### Fixed
+
+- network access
+
 ## [0.4.0] - 2024-12-18
 
 ### Fixed
