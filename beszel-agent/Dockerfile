@@ -4,6 +4,8 @@ FROM $BUILD_FROM
 COPY config.yaml /
 RUN grep version < config.yaml | grep -oe '[0-9\.]*' > VERSION && rm config.yaml
 
+RUN curl -s "https://api.github.com/repos/henrygd/beszel/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' > BESZEL_AGENT_VERSION
+
 COPY run.sh /
 RUN chmod a+x /run.sh
 
