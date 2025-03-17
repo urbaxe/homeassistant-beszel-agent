@@ -19,4 +19,4 @@ arch:
   - armhf
   - armv7
   - i386
-image: "matthewhadley/homeassistant-beszel-agent-{arch}"
+image: "RichardD012/homeassistant-beszel-agent-{arch}"
