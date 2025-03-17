@@ -28,6 +28,7 @@ jobs:
             echo VERSION_BUMP=true >> $GITHUB_ENV;
           else
             echo "No version change"
+            echo VERSION_BUMP=true >> $GITHUB_ENV;
           fi
       - name: Login to DockerHub
         if: env.VERSION_BUMP == 'true'
