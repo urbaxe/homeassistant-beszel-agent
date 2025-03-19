@@ -1,6 +1,6 @@
 name: "Beszel-Agent"
 description: "Beszel-Agent for Home Assistant"
-url: "https://github.com/RichardD012/homeassistant-beszel-agent"
+url: "https://github.com/urbaxe/homeassistant-beszel-agent"
 version: "0.10.2"
 slug: "updated-beszel-agent"
 init: false
@@ -19,4 +19,4 @@ arch:
   - armhf
   - armv7
   - i386
-image: "richardd012/homeassistant-beszel-agent-{arch}"
+image: "urbaxe/homeassistant-beszel-agent-{arch}"
